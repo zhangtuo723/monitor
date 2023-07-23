@@ -13,7 +13,7 @@ export function webrecord(){
     setTimeout(()=>{
         end()
         replay()
-    },5000)
+    },10000)
    
 
 }
@@ -30,7 +30,7 @@ export function replay(){
             const initDom = recorditem.initDom
             const actionList = recorditem.actionList
             Replayer.init(initDom,actionList)
-            // window.localStorage.removeItem('recordList')
+            window.localStorage.removeItem('recordList')
         }
     
 }
